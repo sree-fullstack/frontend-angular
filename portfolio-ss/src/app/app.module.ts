@@ -2,15 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-
+import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardPageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, DashboardPageComponent, LoginPageComponent]
 })
 export class AppModule { }
